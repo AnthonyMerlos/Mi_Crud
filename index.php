@@ -7,6 +7,8 @@
   <title>Crud para registrar personas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+   <link rel="icon" type="image/png" href="https://tse2.mm.bing.net/th/id/OIP.pCtuPRb9pMd04k4OnamQaAHaHa?w=512&h=512&rs=1&pid=ImgDetMain&o=7&rm=3">
+
 </head>
 
 <body>
