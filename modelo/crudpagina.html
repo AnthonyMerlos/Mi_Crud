@@ -24,11 +24,7 @@
   <form class="col-4 p-3" method="POST" action="">
     <h3 class="text-center text-white">Registros para alquilar cine</h3>
 
-    <?php
-    include "modelo/conexion-pdo.php";
-    include "controlador/registro_personal.php";
-
-    ?>
+  
     <div class="contenedor">
       <label for="cantidad_de_alarmas" class="form-label text-white">Cantidad de Alarmas</label>
       <input type="number" class="form-control" name="cantidad_de_alarmas" id="cantidad_de_alarmas">
@@ -75,26 +71,7 @@
         </tr>
       </thead>
       <tbody>
-        <?php
-        include("modelo/conexion-pdo.php");
-        $pdo = $conexion->query("SELECT * FROM cine");
-        while ($datos = $pdo->fetch(PDO::FETCH_OBJ)) { ?>
-          <tr>
-            <th scope="row" class="bg-danger"><?= $datos->idcine ?></th>
-            <td class="bg-success"><?= $datos->Alarmas ?></td>
-            <td class="bg-warning"><?= $datos->lamparas ?></td>
-            <td class="bg-light"><?= $datos->sillones ?></td>
-            <td class="bg-primary"><?= $datos->sostenedores ?></td>
-            <td class="bg-info"><?= $datos->TV ?></td>
-            <td>
-              <a href="http://localhost/hola/modificar_producto.php?id=<?= $datos->idcine ?>"
-                class="btn btn-small btn-warning">Editar</a>
-
-              <a href="controlador/eliminar_registro.php?id=<?= $datos->idcine ?>"
-                class="btn btn-small btn-danger">Eliminar</a>
-            </td>
-          </tr>
-        <?php } ?>
+    
 
 
       </tbody>
